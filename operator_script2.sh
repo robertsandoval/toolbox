@@ -15,7 +15,6 @@ podman login registry.redhat.io --authfile=${REG_CREDS}
 
 echo "INFO: Start Building Operators Catalog ...."
 
-exit 0
 
 oc adm catalog mirror \
     ${MIRROR_REG}:5000/olm/redhat-operators:v1 \
