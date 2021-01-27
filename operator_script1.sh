@@ -17,7 +17,7 @@ podman login registry.redhat.io  ${MIRROR_REG}:5000 --authfile ${REG_CREDS}
 
 
 echo "INFO: Start Building Operators Catalog ...."
-exit 0
+
 ./oc version
 ./oc adm catalog build --filter-by-os='linux/amd64' \
     --appregistry-org redhat-operators \
